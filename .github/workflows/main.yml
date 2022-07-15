@@ -14,18 +14,11 @@ jobs:
     # uses github's checkout action to checkout code from the master branch
     - uses: actions/checkout@v2
 
-    # sets up .NET Core SDK 3.1
+    # sets up .NET Core SDK
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
-        
-    - name: Restore dependancies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --not-build --verbosity normal
 
     # publishes blazor project to the release-folder
     - name: Publish .NET Core project
