@@ -22,7 +22,7 @@ jobs:
 
     # publishes blazor project to the release-folder
     - name: Publish .NET Core project
-      run: dotnet publish Portfolio.Web.sln -c Release -o release --nologo
+      run: dotnet publish Portfolio.Web.csproj -c Release -o release --nologo
 
     - name: Commit wwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.3.4
