@@ -18,7 +18,14 @@ jobs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1
+        dotnet-version: 6
+        
+    - name: Restore dependancies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --not-build --verbosity normal
 
     # publishes blazor project to the release-folder
     - name: Publish .NET Core project
