@@ -1,0 +1,30 @@
+name: Deploy To GitHub Pages
+
+# Run workflow on every push to the master branch
+
+on:
+  push:
+    branches: [ master ]
+    
+jobs:
+  deploy-to-github-pages:
+  # use ubuntu-latest image
+  runs-on: ubuntu-latest
+  steps:
+  # uses github's checkout action to checkout code from the master branch
+  - uses: actions/checkout@v2
+  
+  # sets up .NET Core SDK 3.1
+  - name: Setup .NET Core SDK
+    uses: actions/setup-dotnet@v1
+    with:
+      dotnet-version: 3.1
+      
+  # publishes blazor project to the release-folder
+  - name: Publish .NET Core project
+    run: dotnet publish Portfolio.Web.csproj -c Release -o release --nologo
+    
+  - name: Commit wwroot to GitHub Pages
+    uses: JamesIves/github-pages-deploy-action@v4.3.4
+    with:
+      folder: release/wwwroot
