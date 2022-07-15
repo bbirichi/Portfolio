@@ -24,6 +24,9 @@ jobs:
     - name: Publish .NET Core project
       run: dotnet publish -c Release -o release --nologo
 
+    - name: Change base tag in index.html 
+      run: sed -i 's/<base href="\/" \/>/<base href="\/Portfolio.Web\/" \/>/g' release/wwwroot/index.html
+
     - name: Commit wwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.3.4
       with:
