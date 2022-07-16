@@ -1,7 +1,46 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+:root {
+    font-size: 16px;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #3a0647;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body{
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+/*Scroll bar */
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+    background: #3a0647;
+}
+
+.center-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1:focus {
@@ -62,3 +101,9 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+@media only screen and (max-width: 600px) {
+    main{
+        margin: 0;
+    }
+}
