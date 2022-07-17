@@ -3,7 +3,7 @@
 :root {
     font-size: 16px;
     --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
+    --text-secondary: #3a0647;
     --bg-primary: #3a0647;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
@@ -21,8 +21,8 @@ body{
 }
 
 main{
-    margin-left: 5rem;
-    padding: 1rem;
+    margin-left: 15rem;
+    margin-right: 20rem;
 }
 
 /*Scroll bar */
