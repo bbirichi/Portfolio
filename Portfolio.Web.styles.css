@@ -251,7 +251,7 @@ main[b-9gvj8xx0cb] {
 
     .nav-link svg[b-q2l3n2ewbu] {
         width: 3rem;
-        fill: var(--text-primary);
+        fill: white;
         min-width: 2rem;
         transition: 200ms;
     }
