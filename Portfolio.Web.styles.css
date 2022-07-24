@@ -1,7 +1,26 @@
 /* /Pages/About.razor.rz.scp.css */
+.socials[b-shi5mamyrm]{
+    display: flex;
+    flex-direction: row;
+}
+
+svg[b-shi5mamyrm] {
+    width: 3rem;
+    margin: 0 .5rem;
+}
 /* /Pages/Education.razor.rz.scp.css */
 
 /* /Pages/Experience.razor.rz.scp.css */
+.tech-box[b-ezbmdsd5t8] {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+svg[b-ezbmdsd5t8] {
+    width: 3rem;
+    margin: 0 .5rem;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-9gvj8xx0cb] {
     position: relative;
