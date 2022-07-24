@@ -1,1 +1,9 @@
-﻿
+﻿.socials{
+    display: flex;
+    flex-direction: row;
+}
+
+svg {
+    width: 3rem;
+    margin: 0 .5rem;
+}

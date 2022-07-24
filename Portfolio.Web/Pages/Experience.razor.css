@@ -1,1 +1,10 @@
-﻿
+﻿.tech-box {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+svg {
+    width: 3rem;
+    margin: 0 .5rem;
+}
