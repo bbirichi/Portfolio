@@ -21,6 +21,36 @@ svg[b-ezbmdsd5t8] {
     width: 3rem;
     margin: 0 .5rem;
 }
+/* /Pages/Projects.razor.rz.scp.css */
+.screeshot-div[b-uau8f9c0ke] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.screenshot-div img[b-uau8f9c0ke] {
+    width: 15rem;
+    margin: 0.5rem;
+}
+
+.download-div[b-uau8f9c0ke] {
+    background-color: var(--bg-primary);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+.download-link[b-uau8f9c0ke] {
+    text-decoration: none;
+    color: white;
+}
+
+    .download-link svg[b-uau8f9c0ke] {
+        fill: white;
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-9gvj8xx0cb] {
     position: relative;
@@ -232,13 +262,12 @@ main[b-9gvj8xx0cb] {
         transition: 200ms;
     }
 
-    .nav-link svg:hover[b-q2l3n2ewbu] {
+    .nav-link:hover svg[b-q2l3n2ewbu] {
         fill: white;
         transition: 600ms;
     }
 
     .nav-link:hover .link-text[b-q2l3n2ewbu] {
-        padding: 10px;
         display: inline;
         color: white;
         transition: 300ms;
