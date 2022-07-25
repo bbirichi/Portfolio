@@ -62,13 +62,12 @@
         transition: 200ms;
     }
 
-    .nav-link svg:hover {
+    .nav-link:hover svg {
         fill: white;
         transition: 600ms;
     }
 
     .nav-link:hover .link-text {
-        padding: 10px;
         display: inline;
         color: white;
         transition: 300ms;

@@ -1,0 +1,29 @@
+﻿.screeshot-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.screenshot-div img {
+    width: 15rem;
+    margin: 0.5rem;
+}
+
+.download-div {
+    background-color: var(--bg-primary);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+.download-link {
+    text-decoration: none;
+    color: white;
+}
+
+    .download-link svg {
+        fill: white;
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
